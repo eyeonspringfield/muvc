@@ -4,6 +4,8 @@
 #include "commands/stage.hpp"
 #include "commands/snap.hpp"
 #include "commands/list.hpp"
+#include "commands/check.hpp"
+#include "commands/restore.hpp"
 
 int main(const int argc, char** argv) {
     CLI::App app{"muvc - Music Version Control System"};
@@ -13,6 +15,8 @@ int main(const int argc, char** argv) {
     register_stage_command(app);
     register_snap_command(app);
     register_list_command(app);
+    register_check_command(app);
+    register_restore_command(app);
 
     try {
         CLI11_PARSE(app, argc, argv);

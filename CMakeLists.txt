@@ -31,6 +31,10 @@ add_executable(muvc ${SOURCES}
         src/utils/hash.cpp
         src/utils/hash.hpp
         src/commands/list.cpp
-        src/commands/list.hpp)
+        src/commands/list.hpp
+        src/commands/check.cpp
+        src/commands/check.hpp
+        src/commands/restore.cpp
+        src/commands/restore.hpp)
 
 target_link_libraries(muvc CLI11::CLI11)

@@ -25,7 +25,7 @@ std::string hash_file_contents(const std::filesystem::path &path) {
 
 std::string hash_string(const std::string& input) {
     uint64_t hash = FNV_OFFSET_BASIS;
-    for (char c : input) {
+    for (const char c : input) {
         hash ^= static_cast<unsigned char>(c);
         hash *= FNV_PRIME;
     }
