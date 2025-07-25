@@ -18,7 +18,7 @@ std::string hash_file_contents(const std::filesystem::path &path) {
         }
     }
 
-    std::stringstream ss;
+    std::stringstream<char> ss;
     ss << std::hex << hash;
     return ss.str();
 }
