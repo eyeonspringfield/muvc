@@ -2,6 +2,8 @@
 
 A CLI VCS (command line interface version control system) app tailored towards musicians.
 
+**Note:** This project is currently being redesigned from the ground up. The current version is a simple minimum viable product created to help me understand the quirks and challenges of creating a git-like VCS application, and is not intended to be used in any capacity.
+
 ## Features
 - Staging of music files
 - Creating snapshots of staged files at a certain timestamp
